@@ -15,8 +15,76 @@ $secondary__Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
 $secondary__Very-Light-Magenta: hsl(289, 100%, 72%); 
 
 body {
+  padding: 15px;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
+
+  background-color: #ddd;
+}
+
+.app-illustration {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  position: relative;
+
+  width: 240px;
+  height: 480px;
+
+  border: 10px solid #fff;
+  border-radius: 30px;
+
+  background-color: #eee;
+
+  box-shadow: 0 0 20px lightgrey;
+
+  &::before {
+    content: " ";
+
+    display: block;
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 130px;
+    height: 20px;
+
+    border-radius: 0 0 14px 14px;
+
+    background-color: #fff;
+  }
+}
+
+.description {
+  text-align: center;
+
+  .description__title {
+    margin-bottom: 20px;
+
+    font-size: 39px;
+    font-weight: 500;
+    color: $text__Very-Dark-Desaturated-Violet;
+  }
+
+  .description__text {
+    margin: 0 auto;
+
+    max-width: 400px;
+
+    color: $text__Dark-Grayish-Violet;
+    line-height: 1.6;
+  }
 }
 
 @media (min-width: 375px) {
