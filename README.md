@@ -1,2 +1,4 @@
 # Chat-app-CSS-illustration
-this is a Frontend Mentor challenge that I created for my portfolio
+This is a Frontend Mentor challenge that I created for my portfolio.
+
+If you want to see the result, click on this link https://maximivanov2004.github.io/Chat-app-CSS-illustration/app/index.html
