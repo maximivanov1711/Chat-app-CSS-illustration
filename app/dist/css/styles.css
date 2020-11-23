@@ -17,6 +17,8 @@ body {
   width: 240px;
   height: 480px;
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #eee;
   box-shadow: 0 0 20px lightgrey; }
   .phone::before {
@@ -93,3 +95,26 @@ body {
     max-width: 400px;
     line-height: 1.6;
     color: #a39daa; }
+
+.messages {
+  padding: 13px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+  .messages .message {
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 60%;
+    color: #3e2753;
+    font-size: 9px;
+    line-height: 1.4;
+    border-radius: 10px 10px 5px 10px;
+    background-color: white;
+    box-shadow: 0 8px 8px #dddddd; }
+  .messages .message-interlocutor {
+    margin-left: 0;
+    color: #9241c8;
+    border-radius: 10px 10px 10px 5px;
+    background-color: #e8dbf6;
+    box-shadow: none; }
